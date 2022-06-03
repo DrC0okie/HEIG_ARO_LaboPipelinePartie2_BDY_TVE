@@ -80,14 +80,20 @@
 @ mov r1, #6
 @ mov r2, #7
 @ b test_1
-
+@ NOP
+@ NOP
+@ NOP
+@ NOP
 @ .org 0x20
 @ test_1:
 @ mov r0, #8
 @ mov r1, #9
 @ mov r2, r1
 @ b test_2
-
+@ NOP
+@ NOP
+@ NOP
+@ NOP
 @ .org 0x40
 @ test_2:
 @ mov r0, #9
